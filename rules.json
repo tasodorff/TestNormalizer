@@ -10,6 +10,18 @@
       "rule": "^(?!.*IDF)((FCU)|(FC)|(DX)|(CRAH)|(CRAC)|(HP))",
       "outputField": "assetType",
       "outputValue": "FCU"
+    },
+    {
+      "inputField": "controlProgram",
+      "rule": "^(?!.*((IDF)|(EF)))((FPVAV)|(VAV)|(\\bCO\\b)|(\\bRH\\b))",
+      "outputField": "assetType",
+      "outputValue": "VAV"
+    },
+    {
+      "inputField": "controlProgram",
+      "rule": "^(?!.*IDF)((FCU)|(FC)|(DX)|(CRAH)|(CRAC)|(HP))",
+      "outputField": "assetType",
+      "outputValue": "FCU"
     }
-  ]
+    ]
 }
